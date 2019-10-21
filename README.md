@@ -5,4 +5,4 @@ This is a Discrete-Event Simulation (DES) tool developed as a parametric CAD pro
 Reference-style: 
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[logo]: https://github.com/CemreTUDelft/DES_PoR_Tool/blob/master/DES_GraphicalAbstract.jpg "Logo Title Text 2"
