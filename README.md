@@ -10,3 +10,11 @@ Graphical Abstract:
 [logo]: https://github.com/CemreTUDelft/DES_PoR_Tool/blob/master/DES_GraphicalAbstract.jpg "Logo Title Text 2"
 
 
+```
+func main ()
+  A = 1,2,3
+  print A[1] //1
+  A[1] = 99 
+  print A[1] //99
+end func 
+```
