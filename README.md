@@ -1,7 +1,3 @@
----
-header-includes:
-  - \usepackage{algorithm2e}
----
 # DES_PoR_Tool
 
 Developed in 2018 by Cemre Çubukçuoğlu - BK <C.Cubukcuoglu@tudelft.nl> 
@@ -13,28 +9,4 @@ Graphical Abstract:
 
 [logo]: https://github.com/CemreTUDelft/DES_PoR_Tool/blob/master/DES_GraphicalAbstract.jpg "Logo Title Text 2"
 
----
-header-includes:
-  - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
----
-# Algorithm 1
-Just a sample algorithmn
-\begin{algorithm}[H]
-\DontPrintSemicolon
-\SetAlgoLined
-\KwResult{Write here the result}
-\SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}
-\Input{Write here the input}
-\Output{Write here the output}
-\BlankLine
-\While{While condition}{
-    instructions\;
-    \eIf{condition}{
-        instructions1\;
-        instructions2\;
-    }{
-        instructions3\;
-    }
-}
-\caption{While loop with If/Else condition}
-\end{algorithm} 
+
