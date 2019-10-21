@@ -8,3 +8,19 @@ Graphical Abstract:
 ![alt text][logo]
 
 [logo]: https://github.com/CemreTUDelft/DES_PoR_Tool/blob/master/DES_GraphicalAbstract.jpg "Logo Title Text 2"
+
+The procedure run by the tool can be described as the following:
+```
+Begin
+	Put the simulation settings
+	Create DES model
+		Create patient arrivals
+		Create treatment process using GH inputs
+		Run the simulation
+	Get the outputs of DES
+
+	Calculate space requirements for each unit
+		Formulations using GH inputs and hospital design standards
+	Get the outputs of PoR
+End
+```
