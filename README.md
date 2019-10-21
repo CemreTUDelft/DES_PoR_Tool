@@ -11,10 +11,16 @@ Graphical Abstract:
 
 
 ```
-func main ()
-  A = 1,2,3
-  print A[1] //1
-  A[1] = 99 
-  print A[1] //99
-end func 
+Begin
+	Put the simulation settings
+	Create DES model
+		Create patient arrivals
+		Create treatment process using GH inputs
+		Run the simulation
+	Get the outputs of DES
+
+	Calculate space requirements for each unit
+		Formulations using GH inputs and hospital design standards
+	Get the outputs of PoR
+End
 ```
