@@ -1,6 +1,19 @@
 import random
 import simpy
 
+#input settings
+NUM_DOCTORS=2
+TREATMENTTIME=5
+T_INTER=7
+SingleBedRoom_Num=20
+OutpatientDept_Num=16
+MultipleBedRoom_BedNum=40
+SingleBed_DeliveryRoom_Num=12
+MultipleBed_DeliveryRoom_BedNum=10
+ICU_BedNum=10
+Administrative_Num=20
+TotalBeds_Num=SingleBedRoom_Num+MultipleBedRoom_BedNum+SingleBed_DeliveryRoom_Num+MultipleBed_DeliveryRoom_BedNum+ICU_BedNum
+
 #Area calculation of treatment rooms & waiting areas in each outpatient department
 if NUM_DOCTORS == 1:
     Outpatient_Dept_Area = (16 * NUM_DOCTORS) + 12 #treatment rooms + waiting areas
@@ -80,3 +93,11 @@ elif TotalBeds_Num > 200 and TotalBeds_Num <= 350:
     MIN_ELEV = 9
 i=MIN_ELEV
 #get the outputs of PoR from c,d,e,f,g,h,i
+print()
+print('Outpatient area should be minimum', c,'m2')
+print('Inpatient area should be minimum', d,'m2')
+print('Delivery area should be minimum', e,'m2')
+print('Intensive Care Units should be minimum', f,'m2')
+print('Administrative offices should be minimum', g,'m2')
+print('Bunker area should be minimum', h,'m2')
+print('Elevator number should be minimum', i)
