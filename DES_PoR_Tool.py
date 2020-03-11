@@ -1,4 +1,5 @@
 import random
+import numpy as np
 import simpy
 
 #input settings
@@ -37,7 +38,7 @@ class Outpatient(object):
         self.treatmenttime = treatmenttime
 
     def treat(self, patient):
-        yield self.env.timeout(TREATMENTTIME)
+        yield self.env.timeout(random.expovariate(1/TREATMENTTIME)) #exponential treatment time
 
 #create patient arrivals
 def patient(env, name, pr):
@@ -60,7 +61,7 @@ def setup(env, num_doctors, treatmenttime, t_inter):
         env.process(patient(env, 'patient %d' % i, outpatient_department))
     #create more patients
     while True:
-        yield env.timeout(random.randint(t_inter - 2, t_inter + 2))
+        yield env.timeout(np.random.poisson(t_inter)) #simulate patient arrivals in a poisson process with a lambda value of 7
         i += 1
         env.process(patient(env, 'patient %d' % i, outpatient_department))
         data_patientdisposed.append(i)
